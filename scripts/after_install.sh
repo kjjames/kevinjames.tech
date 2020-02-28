@@ -15,6 +15,8 @@ then
 	exit 1
 fi
 
+cd /var/www/html/portfolio
+
 # Install dependencies
 npm install
 
