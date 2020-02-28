@@ -64,6 +64,6 @@
         </style>
     </head>
     <body>
-        <h2>Kill me...</h2>
+        <h2>It works!</h2>
     </body>
 </html>
