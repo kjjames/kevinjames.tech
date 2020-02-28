@@ -116,25 +116,25 @@ hooks:
 #   revision's file bundle.
   ApplicationStop:
     - location: scripts/stop_server.sh
-      timeout: 200
+      timeout: 60
       runas: root
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 200
-      runas: root
-# During the AfterInstall deployment lifecycle event, run the commands
-#   in the script specified in "location".
-  # AfterInstall:
+  # BeforeInstall:
   #   - location:
   #     timeout:
   #     runas:
+# During the AfterInstall deployment lifecycle event, run the commands
+#   in the script specified in "location".
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 180
+      runas: root
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
     - location: scripts/start_server.sh
-      timeout: 200
+      timeout: 60
       runas: root
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
