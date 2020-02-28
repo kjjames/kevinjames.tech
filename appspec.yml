@@ -14,7 +14,7 @@ os: linux
 files:
   - source: /app
     destination: /var/www/html/portfolio/app
-  - source: /boostrap
+  - source: /bootstrap
     destination: /var/www/html/portfolio/bootstrap
   - source: /config
     destination: /var/www/html/portfolio/config
